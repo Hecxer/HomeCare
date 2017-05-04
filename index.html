@@ -1,0 +1,437 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HomeCare - 居家照護</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <!--<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body,h2 {
+            font-family: 微軟正黑體;
+        }
+   
+       #detail{
+           font-size:17px;
+       }
+        #menu, #menu ul {
+            list-style: none;
+            font-family: 微軟正黑體;
+            /*margin: 0;*/
+            padding: 0;
+        }
+
+            #menu li {
+                /*background-color: #477dff;*/
+                /*float:left;*/
+                /*border-right:1px solid white;*/
+                /*border-bottom: 1px solid white;*/
+            }
+
+            #menu a {
+                font-size: 16px;
+                text-decoration: none;
+                cursor: pointer;
+                /*padding: 5px;
+                    display: block;
+                    width: 1200px;*/
+            }
+    </style>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#menu li ul').hide();
+            $('#menu>li').click(function () {
+                $(this).find('ul').slideToggle(500);   //slideToggle:滑動效果
+            });
+
+
+            //$('#menu li ul').hide();
+            //$('#menu li').hover(function(){
+            //    $(this).find('ul').slideDown(300);
+            //}, function () {
+            //    $(this).find('ul').slideUp(300);
+            //});
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#">HomeCare</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#about">主頁</a>
+                    </li>
+                    <li>
+                        <a href="#feature">功能介紹</a>
+                    </li>
+                    <li>
+                        <a href="#info">健康新知</a>
+                    </li>
+                    <li>
+                        <a href="#self_test">自我檢測</a>
+                    </li>
+                    <li>
+                        <a href="#faq">常見問題</a>
+                    </li>
+                    <li>
+                        <a href="#contact">聯絡我們</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>HomeCare</h1>
+                        <h3 style="font-family:'Microsoft YaHei'">居家照護</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="https://www.facebook.com/" >
+                                    <img src="img/fb_icon.svg" width="115"/><span class="network-name"></span></a>
+                            </li>
+                            <li>
+                                <a href="https://line.me/zh-hant/" >
+                                    <img src="img/line_icon.svg" width="115" /> <span class="network-name"></span></a>
+                            </li>
+                            
+                        </ul>
+                        <div class="in">
+                            <a href='http://play.google.com/'><img alt='Google Play立即下載' src="img/google-play-badge.png" height="108" width="280" /></a>
+                        </div>     
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+
+	<a  name="feature"></a>
+    <div class="content-section-a" id="feature">
+
+        <!--健康記錄-->
+        <div class="container">  
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">健康記錄</h2>
+                    <p class="lead">
+                        <ul id="detail">
+                            <li>紀錄身體數值</li>
+                            <ul>
+                                <li>使用者手動輸入如血壓、血糖、體重及過往病史等 </li>
+                            </ul>
+                           
+
+                            <li>會員制管理</li>
+                            <ul>
+                                <li>登錄會員讓系統在資料庫建立專屬的健康紀錄表。使用者可透過會員管理系統賦予其他帳號瀏覽自身紀錄的權限。 </li>
+                            </ul>
+                        </ul>
+                   
+                    </p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/record.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+    
+
+    <div class="content-section-b">
+        <!--推播服務-->
+        <div class="container">
+
+            <div class="row">
+                
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">推播服務</h2>
+                        <p class="lead">
+                            <ul id="detail">
+                                <li>根據健康紀錄推播相關資訊</li>
+                                <ul>
+                                    <li>如果健康紀錄中數值呈現多次異常，會定時推播，建議使用者到醫院做進一步檢查。<br />亦可針對使用者的健康紀錄，推播相關健康資訊。</li>
+                                </ul>
+
+                            </ul>
+                        </p>
+                    </div>
+                
+                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                        <img class="img-responsive" src="img/reminder.png" alt="">
+                    </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <a name="info"></a>
+    <div class="content-section-a">
+        <!--健康新知-->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">健康新知</h2>
+                        <p class="lead">
+                            <ul id="detail">
+                                <li>提供相關保健文章讓使用者查詢。</li>
+                                <li>配合推播功能抓取符合使用者情況之文章進行推播。</li>
+                            </ul>
+                        </p>
+                    </div>
+                    
+                        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                            <img class="img-responsive" src="img/search.png" alt="">
+                        </div>
+                </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+    <a name="self_test"></a>
+    <div class="content-section-b">
+        <!--自我檢測-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">自我檢測</h2>
+                    <p class="lead">
+                        <ul id="detail">
+                            <li>提供各種自我檢測表單，方便使用者直接在APP裡檢測。</li>             
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="img/form.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.content-section-b -->
+    <a name="faq"></a>
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 id="menu">常見問題</h2>
+                    <p class="lead">
+                        <div id="container">
+                            <ul id="menu">
+                                <li>
+                                    <a>Ｑ：密碼忘了，怎麼辦？</a>
+                                    <ul class="submenu">
+                                        <li>您好： 若要查詢您的密碼，請至會員中心「忘記密碼」頁面，輸入您的「會員帳號」、「電子郵件」後，系統會自動將會員資料寄送到您的電子信箱。 若忘記您的資料，請重新加入本網站會員，謝謝！</li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>Ｑ：何謂居家護理？</a>
+                                    <ul class="submenu">
+                                        <li>『居家護理』服務是為了減少不必要的住院耗費及感染，減輕病人及家屬往返醫院所花費的時間、人力、精神，使病人能在家中享受家庭溫情與安全的居家照護，主要目的是幫助照顧者在家照護病人，讓醫療服務不致因出院而中斷，同時也可以減輕病人及家屬往返醫院所花費的時間和精力。</li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>Ｑ：請問長期照顧是什麼？</a>
+                                    <ul class="submenu">
+                                        <li>當家人因為身心障礙或重大傷病而失能，導致照顧者必須時時刻刻守在家中，長時間付出許多心力與體力，甚至連要外出辦事或休息一下都因為沒幫手而無法離開，面對這些困境，其實可以申請長期照顧服務。</li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>Ｑ：請問什麼情形才能申請長期照顧服務（長期照顧服務對象）？</a>
+                                    <ul class="submenu">
+                                        <li>
+
+                                            經日常生活活動功能(ADL)或工具性日常生活活動功能(IADL)評估，日常生活需他人協助之失能者，包含：<br />
+                                            （一）65歲以上老人<br />
+                                            （二）55歲以上山地原住民<br />
+                                            （三）50歲以上之身心障礙者<br />
+                                            （四）僅IADL失能且獨居之老人
+
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>Ｑ：民眾何時可以申請十年長照的補助？該向什麼單位申請？</a>
+                                    <ul class="submenu">
+                                        <li>為提供失能、失智長者便利之長照整合性服務，目前推動之長期照顧十年計畫，失智症長者已納入長照服務，失智長者凡經一般失能之基本日常生活活動能力(ADL) 或臨床失智評估量表（CDR）評估，有長照服務需求者，即可獲得包括居家護理、居家(社區)復健、喘息服務、日間照顧等長照服務；而經評估非長照服務需求者，則協助連結或轉介其他社會資源，若需申請長照服務、有任何建議或照顧服務諮詢，敬請就近洽詢當地長期照顧管理中心或以市話撥打長照專線412-8080、手機撥打02-412-8080。</li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/oldman.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+	<a  name="contact"></a>
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>聯絡我們</h2>
+                    <p class="lead">
+                        地址：80670高雄市前鎮區凱旋四路105號&nbsp;&nbsp;<a href="http://goo.gl/maps/Fi3Uu" target="_blank">地圖</a>
+                        <br />
+                        電話：07-8210171、0911-341001、0934-232248、0934-232249
+                        <br />
+                        傳真：07-8210170
+                        <br />
+                        E-mail：homecare520@gmail.com
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-inline banner-social-buttons">
+                            <li>
+                                <a href="https://www.facebook.com/">
+                                    <img src="img/fb_icon.svg" width="80" /><span class="network-name"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://line.me/zh-hant/">
+                                    <img src="img/line_icon.svg" width="80" /> <span class="network-name"></span>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#feature">功能介紹</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#info">健康新知</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#self_test">自我檢測</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#faq">常見問題</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#contact">聯絡我們</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
