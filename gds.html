@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <script src="js/homecare.js"></script>
+    <style>
+        label {
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="GDS">
+  
+
+            <h1>憂鬱量表(GDS)</h1>
+
+            <h4>以下列舉的問題是人們對一些事物的感受。請回想在過去一星期內，你是否曾有以下的感受。</h4>
+            <fieldset data-role="controlgroup">
+                <legend>1.你基本上對自己的生活感到滿意嗎?</legend> <!--TRAP-->
+                <input type="radio" name="GDS1" id="gds1a" value="0" checked="">
+                <label for="gds1a">是</label>
+                <br />
+                <input type="radio" name="GDS1" id="gds1b" value="1">
+                <label for="gds1b">不是</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <legend>2.你是否己放棄了很多以往的活動和嗜好?</legend>
+                <input type="radio" name="GDS2" id="gds2a" value="1" checked="">
+                <label for="gds2a">是</label>
+                <br />
+                <input type="radio" name="GDS2" id="gds2b" value="0">
+                <label for="gds2b">不是</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <legend>3.你是否覺得生活空虛?</legend>
+                <input type="radio" name="GDS3" id="gds3a" value="1" checked="">
+                <label for="gds3a">是</label>
+                <br />
+                <input type="radio" name="GDS3" id="gds3b" value="0">
+                <label for="gds3b">不是</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <legend>4.你是否常常感到煩悶?</legend>
+                <input type="radio" name="GDS4" id="gds4a" value="1" checked="">
+                <label for="gds4a">是</label>
+                <br />
+                <input type="radio" name="GDS4" id="gds4b" value="0">
+                <label for="gds4b">不是</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <!--TRAP-->
+                <legend>5.你是否常常感到心情愉快呢?</legend>
+                <input type="radio" name="GDS5" id="gds5a" value="0" checked="">
+                <label for="gds5a">是</label>
+                <br />
+                <input type="radio" name="GDS5" id="gds5b" value="1">
+                <label for="gds5b">不是</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <legend>6.你是否害怕將會有不好的事情發生在你身上呢?</legend>
+                <input type="radio" name="GDS6" id="gds6a" value="1" checked="">
+                <label for="gds6a">是</label>
+                <br />
+                <input type="radio" name="GDS6" id="gds6b" value="0">
+                <label for="gds6b">不是</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <legend>7.你是否大部份時間感到快樂呢?</legend> <!--TRAP-->
+                <input type="radio" name="GDS7" id="gds7a" value="0" checked="">
+                <label for="gds7a">是</label>
+                <br />
+                <input type="radio" name="GDS7" id="gds7b" value="1">
+                <label for="gds7b">不是</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <legend>8.你是否常常感到無助? (即是沒有人能幫自己)</legend>
+                <input type="radio" name="GDS8" id="gds8a" value="1" checked="">
+                <label for="gds8a">是</label>
+                <br />
+                <input type="radio" name="GDS8" id="gds8b" value="0">
+                <label for="gds8b">不是</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <legend>9.你是否寧願晚上留在家，而不愛出外做些有新意的事情? (譬如：和家人到一間新開張餐館吃晚飯)</legend>
+                <input type="radio" name="GDS9" id="gds9a" value="1" checked="">
+                <label for="gds9a">是</label>
+                <br />
+                <input type="radio" name="GDS9" id="gds9b" value="0">
+                <label for="gds9b">不是</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <legend>10.你是否覺得你比大多數人有多些記憶的問題呢?</legend>
+                <input type="radio" name="GDS10" id="gds10a" value="1" checked="">
+                <label for="gds10a">是</label>
+                <br />
+                <input type="radio" name="GDS10" id="gds10b" value="0">
+                <label for="gds10b">不是</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <legend>11.你認為現在活著是一件好事嗎?</legend> <!--TRAP-->
+                <input type="radio" name="GDS11" id="gds11a" value="0" checked="">
+                <label for="gds11a">是</label>
+                <br />
+                <input type="radio" name="GDS11" id="gds11b" value="1">
+                <label for="gds11b">不是</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <legend>12.你是否覺得自己現在是一無是處呢?</legend>
+                <input type="radio" name="GDS12" id="gds12a" value="1" checked="">
+                <label for="gds12a">是</label>
+                <br />
+                <input type="radio" name="GDS12" id="gds12b" value="0">
+                <label for="gds12b">不是</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <legend>13.你是否感到精力充足?</legend> <!--TRAP-->
+                <input type="radio" name="GDS13" id="gds13a" value="0" checked="">
+                <label for="gds13a">是</label>
+                <br />
+                <input type="radio" name="GDS13" id="gds13b" value="1">
+                <label for="gds13b">不是</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <legend>14.你是否覺得自己的處境無望?</legend>
+                <input type="radio" name="GDS14" id="gds14a" value="1" checked="">
+                <label for="gds14a">是</label>
+                <br />
+                <input type="radio" name="GDS14" id="gds14b" value="0">
+                <label for="gds14b">不是</label>
+            </fieldset>
+        <br />
+
+            <fieldset data-role="controlgroup">
+                <legend>15.你覺得大部份人的境況比自己好嗎?</legend>
+                <input type="radio" name="GDS15" id="gds15a" value="1" checked="">
+                <label for="gds15a">是</label>
+                <br />
+                <input type="radio" name="GDS15" id="gds15b" value="0">
+                <label for="gds15b">不是</label>
+            </fieldset>
+        <hr />
+
+        <button type="submit" class="btn btn-success center-block btn-lg" value="" id="calGDS" onclick="calGDS()">送出</button>
+    </div>
+</body>
+</html>
