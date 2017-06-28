@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <script src="js/homecare.js"></script>
+    <style>
+        label {
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="ADL">
+
+            
+            <h1>ADL量表測驗</h1>
+   
+            <h4>基本日常生活活動能力（ADL）</h4>
+        
+            <fieldset data-role="controlgroup">
+
+                <legend>1.進食</legend>
+                    <input type="radio" name="ADL1" id=adl1a value="10" checked="">
+                    <label for="adl1a">自己在合理時間內（約 10 秒鐘吃一口飯）可用筷子取食眼前的食物，若需使用進食輔具時，應會自行穿脫。</label>
+                <br />
+                <input type="radio" name="ADL1" id="adl1b" value="5">
+                    <label for="adl1b">需別人幫忙穿脫輔具或只會用湯匙進食。</label>
+                <br />
+                <input type="radio" name="ADL1" id="adl1c" value="0">
+                    <label for="adl1c">無法自行取食或耗費時間過長。</label>
+                 </fieldset>
+        <br />
+            <fieldset>
+                <legend>2.洗澡</legend>
+                <input type="radio" name="ADL2" id="adl2a" value="5" checked="">
+                <label for="adl2a">可獨立完成，不需別人在旁(不論是盆浴或淋浴)。</label>
+                <br />
+                <input type="radio" name="ADL2" id="adl2b" value="0">
+                <label for="adl2b">需別人協助。</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <legend>3.個人衛生</legend>
+                <input type="radio" name="ADL3" id="adl3a" value="5" checked="">
+                <label for="adl3a">可獨立完成洗臉、洗手、刷牙及梳頭髮。</label>
+                <br />
+                <input type="radio" name="ADL3" id="adl3b" value="0">
+                <label for="adl3b">需別人協助。</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <legend>4.穿脫衣服</legend>
+                <input type="radio" name="ADL4" id="adl4a" value="10" checked="">
+                <label for="adl4a">可自行穿脫衣服、褲子、鞋子、及輔具等。</label>
+                <br />
+                <input type="radio" name="ADL4" id="adl4b" value="5">
+                <label for="adl4b">在別人協助下，可自行完成一半的動作。</label>
+                <br />
+                <input type="radio" name="ADL4" id="adl4c" value="0">
+                <label for="adl4c">需別人協助。</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <legend>5.排便控制</legend>
+                <input type="radio" name="ADL5" id="adl5a" value="10" checked="">
+                <label for="adl5a">不會失禁，並可自行使用塞劑</label>
+                <br />
+                <input type="radio" name="ADL5" id="adl5b" value="5">
+                <label for="adl5b">偶而會失禁(每週不超過一次)或使用塞劑時需別人協助。</label>
+                <br />
+                <input type="radio" name="ADL5" id="adl5c" value="0">
+                <label for="adl5c">完全依賴。</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <legend>6.排尿控制 </legend>
+                <input type="radio" name="ADL6" id="adl6a" value="10" checked="">
+                <label for="adl6a">日夜皆不會尿失禁，或可自行使用並清理尿套。</label>
+                <br />
+                <input type="radio" name="ADL6" id="adl6b" value="5">
+                <label for="adl6b">偶而會尿失禁(每週不超過一次)或尿急(無法等待便盆或無法及時敢到廁所)或需別人幫忙處理尿套。</label>
+                <br />
+                <input type="radio" name="ADL6" id="adl6c" value="0">
+                <label for="adl6c">完全依賴。</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <legend>7.如廁</legend>
+                <input type="radio" name="ADL7" id="adl7a" value="10" checked="">
+                <label for="adl7a">可自行進出廁所，不會弄髒衣服並能穿好衣服使用便盆者，可自行清理便盆，</label>
+                <br />
+                <input type="radio" name="ADL7" id="adl7b" value="5">
+                <label for="adl7b">需幫忙保持姿勢的平衡、整理以物或使用衛生紙，使用便盆者，可自行取放便盆但須仰賴他人清理。</label>
+                <br />
+                <input type="radio" name="ADL7" id="adl7c" value="0">
+                <label for="adl7c">需別人協助。</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <legend>8.移位(輪椅與床位間的移動)</legend>
+                <input type="radio" name="ADL8" id="adl8a" value="15" checked="">
+                <label for="adl8a">可獨立完成，包括輪椅的煞車及移開腳踏板。</label>
+                <br />
+                <input type="radio" name="ADL8" id="adl8b" value="10">
+                <label for="adl8b">需要稍微的協助(例如：予以輕扶以保持平衡)或需要口頭指導。</label>
+                <br />
+                <input type="radio" name="ADL8" id="adl8c" value="5">
+                <label for="adl8c">可自行從床上坐起來，但移位時仍需要人幫忙。</label>
+                <br />
+                <input type="radio" name="ADL8" id="adl8d" value="0">
+                <label for="adl8d">需別人協助可坐起來或需要兩人幫忙方可移位。</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <legend>9.步行</legend>
+                <input type="radio" name="ADL9" id="adl9a" value="15" checked="">
+                <label for="adl9a">使用或不使用輔具皆可獨立行走 50 公尺以上。</label>
+                <br />
+                <input type="radio" name="ADL9" id="adl9b" value="10">
+                <label for="adl9b">需要稍微扶持或口頭指導方可行走 50 公尺以上。</label>
+                <br />
+                <input type="radio" name="ADL9" id="adl9c" value="5">
+                <label for="adl9c">雖無法行走，但可獨自操縱輪椅(包括轉彎、進門、及接近桌子、床沿)並可推行輪椅 50 公尺以上。</label>
+                <br />
+                <input type="radio" name="ADL9" id="adl9d" value="0">
+                <label for="adl9d">需別人協助推輪椅。</label>
+            </fieldset>
+        <br />
+            <fieldset data-role="controlgroup">
+                <legend>10.上下樓梯</legend>
+                <input type="radio" name="ADL10" id="adl10a" value="10" checked="">
+                <label for="adl10a">可自行上下樓梯(允許抓扶手、用拐杖)。</label>
+                <br />
+                <input type="radio" name="ADL10" id="adl10b" value="5">
+                <label for="adl10b">需稍微協助或口頭指導。</label>
+                <br />
+                <input type="radio" name="ADL10" id="adl10c" value="0">
+                <label for="adl10c">無法上下樓梯。</label>
+            </fieldset>
+ <hr />
+        <button type="submit" class="btn btn-success center-block btn-lg" value="" id="calADL" onclick="calADL()">送出</button>
+    </div>
+    <!--<div class="">
+        <table class="table table-striped">
+            <tr>
+                <td>基本日常生活活動能力（ADL）</td>
+                <td>10分:不需協助</td>
+                <td>5分:需協助</td>
+                <td>0分:需協助</td>
+            </tr>
+            <tr>
+                <td>1.進食</td>
+                <td><input id="ADL1" type="radio" name="n1" value="10" checked="checked" /></td>
+                <td><input id="ADL1" type="radio" name="n1" value="5" /></td>
+                <td><input id="ADL1" type="radio" name="n1" value="0" /></td>
+            </tr>
+            <tr>
+                <td>2.移位</td>
+                <td><input id="ADL2" type="radio" name="n2" value="10" checked="checked" /></td>
+                <td><input id="ADL2" type="radio" name="n2" value="5" /></td>
+                <td><input id="ADL2" type="radio" name="n2" value="0" /></td>
+            </tr>
+            <tr>
+                <td>3.如廁</td>
+                <td><input id="ADL3" type="radio" name="n3" value="10" checked="checked" /></td>
+                <td><input id="ADL3" type="radio" name="n3" value="5" /></td>
+                <td><input id="ADL3" type="radio" name="n3" value="0" /></td>
+            </tr>
+            <tr>
+                <td>4.洗澡</td>
+                <td><input id="ADL4" type="radio" name="n4" value="1" checked="checked" /></td>
+                <td><input id="ADL4" type="radio" name="n4" value="0" /></td>
+                <td><input id="ADL4" type="radio" name="n4" value="0" /></td>
+            </tr>
+            <tr>
+                <td>5.平地走動</td>
+                <td><input id="ADL5" type="radio" name="n5" value="10" checked="checked" /></td>
+                <td><input id="ADL5" type="radio" name="n5" value="5" /></td>
+                <td><input id="ADL5" type="radio" name="n5" value="0" /></td>
+            </tr>
+            <tr>
+                <td>6.穿脫衣褲鞋襪</td>
+                <td><input id="ADL6" type="radio" name="n6" value="10" checked="checked" /></td>
+                <td><input id="ADL6" type="radio" name="n6" value="5" /></td>
+                <td><input id="ADL6" type="radio" name="n6" value="0" /></td>
+            </tr>
+            <tr>
+                <td>7.個人衛生</td>
+                <td><input id="ADL7" type="radio" name="n7" value="10" checked="checked" /></td>
+                <td><input id="ADL7" type="radio" name="n7" value="5" /></td>
+                <td><input id="ADL7" type="radio" name="n7" value="0" /></td>
+            </tr>
+            <tr>
+                <td>8.上下樓梯</td>
+                <td><input id="ADL8" type="radio" name="n8" value="10" checked="checked" /></td>
+                <td><input id="ADL8" type="radio" name="n8" value="5" /></td>
+                <td><input id="ADL8" type="radio" name="n8" value="0" /></td>
+            </tr>
+            <tr>
+                <td>9.大便控制</td>
+                <td><input id="ADL9" type="radio" name="n9" value="10" checked="checked" /></td>
+                <td><input id="ADL9" type="radio" name="n9" value="5" /></td>
+                <td><input id="ADL9" type="radio" name="n9" value="0" /></td>
+            </tr>
+            <tr>
+                <td>10.小便控制</td>
+                <td><input id="ADL10" type="radio" name="n10" value="10" checked="checked" /></td>
+                <td><input id="ADL10" type="radio" name="n10" value="5" /></td>
+                <td><input id="ADL10" type="radio" name="n10" value="0" /></td>
+            </tr>
+        </table>
+
+        <button type="button" class="btn btn-success center-block" onclick="count();" value="submit">送出</button>
+        
+    </div>-->
+</body>
+</html>
